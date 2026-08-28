@@ -10,10 +10,11 @@
     
     <!-- ARシーンの開始 -->
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      
+      <a-entity light="color: #BBB; type: point; groundColor: #e41b1b" data-aframe-default-light="" aframe-injected="" visible=""></a-entity>
       <!-- 3Dモデルの事前読み込み -->
       <a-assets>
-        <a-asset-item id="myModel" src="model.glb"></a-asset-item>
+        <a-entity light="color: #BBB; type: point; groundColor: #e41b1b" data-aframe-default-light="" aframe-injected="" visible=""></a-entity>
+        <a-entity light="color: #d3c20d; intensity: 0.6; castShadow: true" position="-0.5 2.22 1" data-aframe-default-light="" aframe-injected="" visible=""></a-entity>
       </a-assets>
 
       <!-- Hiroマーカーを認識したときの処理 -->
